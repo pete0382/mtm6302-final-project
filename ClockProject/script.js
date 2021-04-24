@@ -251,6 +251,7 @@ icon.addEventListener("click", function () {
   moreBtn.innerText = "More";
 });
 
+
 function checkedRadioBoxValue(val) {
   for (let i = 0; i < val.length; i++) {
     if (val[i].checked) {

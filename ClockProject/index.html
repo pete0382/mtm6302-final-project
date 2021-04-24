@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section id="heading">
+      <div class="greeting">
+        <h3><span id="greeting_text">GOOD MORNING</span>. IT IS CURRENTLY</h3>
+      </div>
+      <div id="time"></div>
+      <div id="date"></div>
+    </section>
+
+    <section class="details">
+      <button id="btn" class="detailsBtn ripple">MORE</button>
+
+      <div class="day_of_the_week title">
+        <h3>DAY OF THE WEEK</h3>
+        <h2 id="day">Sunday</h2>
+      </div>
+
+      <div class="day_of_the_month title">
+        <h3>DAY OF THE MONTH</h3>
+        <h2 id="month_date">7</h2>
+      </div>
+
+      <div class="day_of_the_Year title">
+        <h3>DAY OF THE YEAR</h3>
+        <h2 id="day_count">132</h2>
+      </div>
+
+      <div class="week_of_the_year title">
+        <h3>WEEK OF THE YEAR</h3>
+        <h2 id="week_count">18</h2>
+      </div>
+    </section>
+
+    <section class="settings">
+      <i class="fas fa-cog icon"></i>
+      <div class="content">
+        <h2>Settings</h2>
+
+        <div class="first">
+          <h3 class="weight">24-Hour-clock</h3>
+          <input type="radio" name="hour" value="24Hour" checked />
+          <label for="yes">Yes</label>
+          <input type="radio" name="hour" value="12Hour" />
+          <label for="No">No</label>
+        </div>
+        <hr />
+
+        <div class="second">
+          <h3 class="weight">Show seconds</h3>
+          <input type="radio" name="seconds" value="show" checked />
+          <label for="yes">Yes</label>
+          <input type="radio" name="seconds" value="hide" />
+          <label for="No">No</label>
+        </div>
+        <hr />
+
+        <div class="third">
+          <h3 class="weight">Show date</h3>
+          <input type="radio" name="date" value="show" />
+          <label for="yes">Yes</label>
+          <input type="radio" name="date" value="hide" checked />
+          <label for="No">No</label>
+        </div>
+        <hr />
+
+        <div class="fourth">
+          <h3 class="weight">Choose color</h3>
+          <input type="radio" name="color" value="white" checked />
+          <label for="white">White</label>
+          <input type="radio" name="color" value="yellow" />
+          <label for="Yellow">Yellow</label>
+          <input type="radio" name="color" value="blue" />
+          <label for="Blue">Blue</label>
+        </div>
+        <hr />
+
+        <button id="save_btn" class="btn">Save</button>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
